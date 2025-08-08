@@ -3,7 +3,10 @@
 }
 
 .container {
-  background-color: #1b1b1b;
-  border: 1px solid black;
+  display: flex;
+  justify-self: center;
+  border-radius: 20px;
+  height: 700px;
+  background-color: rgb(22, 22, 48);
   width: 500px;
 }
