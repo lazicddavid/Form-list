@@ -3,6 +3,7 @@
 }
 
 .form {
+  color: #aaaaaa;
   display: flex;
   justify-content: center;
   border-radius: 20px;
@@ -12,6 +13,7 @@
 }
 
 label {
+  margin: 5px;
   display: block;
   margin-top: 15px;
   font-weight: bold;
@@ -27,7 +29,7 @@ input[type="file"] {
   width: 100%;
   padding: 20px;
   font-size: 16px;
-  border: 2px dashed #aaaaaa;
+  border: 2px solid #aaaaaa;
   background-color: #f9f9f9;
   cursor: pointer;
 }
