@@ -2,11 +2,32 @@
   box-sizing: border-box;
 }
 
-.container {
+.form {
   display: flex;
-  justify-self: center;
+  justify-content: center;
   border-radius: 20px;
   height: 700px;
   background-color: rgb(22, 22, 48);
   width: 500px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  border: 2px dashed #aaaaaa;
+  background-color: #f9f9f9;
+  cursor: pointer;
 }
