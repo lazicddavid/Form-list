@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form list</title>
   </head>
-  <div>
+  <body>
     <div class="form">
-      <form>
+      <form id="birthdayForm">
         <label for="name">First Name:</label>
         <input
           type="text"
@@ -26,13 +26,20 @@
         />
 
         <label for="imageUpload">Upload Image:</label>
-        <input type="file" id="imageUpload" name="imageUpload" />
+        <input
+          type="file"
+          id="imageUpload"
+          name="imageUpload"
+          accept="image/*"
+        />
+
+        <!-- dugme MORA biti u formi da bi Enter radio -->
+        <button type="submit" class="btn-add">Add birthday</button>
       </form>
-      <button type="submit" class="btn-add">Add birthday</button>
+
+      <ul id="addedList" class="added-list"></ul>
     </div>
-    
-    <ul id="addedList" class="added-list"></ul>
-  </div>
+
     <script src="formlist.js"></script>
   </body>
 </html>
