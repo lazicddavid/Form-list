@@ -1,11 +1,9 @@
-// Selektori na početku
 const form = document.getElementById("birthdayForm");
 const list = document.getElementById("addedList");
 const nameEl = document.getElementById("name");
 const lastEl = document.getElementById("last-name");
 const imgEl = document.getElementById("imageUrl");
 
-// Početak: prazan niz
 let birthdays = [];
 
 form.addEventListener("submit", (e) => {
