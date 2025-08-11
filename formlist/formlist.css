@@ -52,11 +52,11 @@ input[type="file"] {
 
 .added-list {
   padding: 0;
-  margin-top: 20px;
+  align-items: center;
+  margin: 0;
 }
 
 .added-list li {
-  align-items: center;
   padding: 8px;
   background: white;
   border: 1px solid gray;
@@ -65,7 +65,8 @@ input[type="file"] {
 }
 .person .name-lastName {
   align-items: center;
-  margin: 20px;
+  margin: 0 20px;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 600;
   color: #111827;
