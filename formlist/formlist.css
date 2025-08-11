@@ -16,7 +16,7 @@ body {
   background: cyan;
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid gray;
+  border: 1px solid blue;
 }
 
 label {
@@ -38,11 +38,16 @@ input[type="file"] {
   margin: 15px auto;
   width: 100%;
   padding: 10px;
-  background-color: green;
+  background-color: skyblue;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.btn-add:hover {
+  background-color: blue;
+  font-weight: bold;
 }
 
 .added-list {
