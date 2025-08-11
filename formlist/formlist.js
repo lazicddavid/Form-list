@@ -10,14 +10,12 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (!nameEl.value || !lastEl.value || !imgEl.value) return;
 
-  // 1) Dodaj u array
   birthdays.push({
     name: nameEl.value,
     lastName: lastEl.value,
     img: imgEl.value,
   });
 
-  // 2) Prikaži ceo array forEach-om
   list.innerHTML = "";
   birthdays.forEach((p) => {
     const li = document.createElement("li");
