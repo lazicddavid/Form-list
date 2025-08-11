@@ -74,4 +74,5 @@ input[type="file"] {
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid blue;
+  margin-right: 10px;
 }
