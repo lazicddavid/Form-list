@@ -58,6 +58,7 @@ input[type="file"] {
 
 .added-list li.person {
   display: flex;
+  align-items: center;
   padding: 8px;
   background: white;
   border: 1px solid gray;
