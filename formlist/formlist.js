@@ -3,6 +3,7 @@ const list = document.getElementById("addedList");
 const nameEl = document.getElementById("name");
 const lastEl = document.getElementById("last-name");
 const imgEl = document.getElementById("imageUrl");
+const = check = document.createElement("input");
 
 let birthdays = [];
 
@@ -21,10 +22,14 @@ form.addEventListener("submit", (e) => {
     const li = document.createElement("li");
     li.className = "person";
 
+
+
+
+
+
     const img = document.createElement("img");
     img.className = "avatar";
     img.src = p.img;
-    img.alt = `${p.name} ${p.lastName}`;
 
     const nameLast = document.createElement("span");
     nameLast.className = "name-lastName";
