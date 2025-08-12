@@ -82,6 +82,11 @@ input[type="file"] {
   border: 1px solid blue;
 }
 
+.person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .remove-check {
   margin-left: auto;
   transform: scale(1.2);
