@@ -81,3 +81,9 @@ input[type="file"] {
   object-fit: cover;
   border: 1px solid blue;
 }
+
+.remove-check {
+  margin-left: auto;
+  transform: scale(1.2);
+  cursor: pointer;
+}
