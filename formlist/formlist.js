@@ -16,7 +16,6 @@ function render() {
     const img = document.createElement("img");
     img.className = "avatar";
     img.src = p.img;
-    img.alt = `${p.name} ${p.lastName}`;
 
     const nameLast = document.createElement("span");
     nameLast.className = "name-lastName";
