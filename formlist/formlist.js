@@ -1,3 +1,9 @@
+//pokusaj da ne koristis render metodu
+//umesto toga kad dodas rodjendan u array, dodaj jedan rodjendan na ekran
+//kad izbrises rodjendan, izbrisi samo taj rodjenda sa ekran
+//umesto check box-a stavi button x;
+//iskoristi innerHTML da popunis html novog rodjendan
+
 const form = document.getElementById("birthdayForm");
 const list = document.getElementById("addedList");
 const nameEl = document.getElementById("name");
@@ -11,6 +17,7 @@ function render() {
 
   birthdays.forEach((p) => {
     const li = document.createElement("li");
+    li.innerHTML = `<div class="birthday`>
     li.className = "person";
 
     const img = document.createElement("img");
