@@ -31,3 +31,9 @@ list.addEventListener("click", (e) => {
   birthdays = birthdays.filter((x) => x.id !== id);
   li.remove();
 });
+
+  const p = { id: Date.now(), name, lastName, img };
+  birthdays.push(p);     
+  addBirthday(p);        
+  form.reset();
+});
