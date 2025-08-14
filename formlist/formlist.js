@@ -14,4 +14,5 @@ let birthdays = [];
 
 function addBirthday(p) {
   const li = document.createElement("li");
+  li.className;
 }
