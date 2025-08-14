@@ -16,11 +16,18 @@ function addBirthday(p) {
   const li = document.createElement("li");
   li.className = "person";
   lidataset.id = personalbar.id;
-    li.innerHTML = `
+  li.innerHTML = `
     <img class="avatar" src="${p.img}" alt="${p.name} ${p.lastName}">
     <span class="name-lastName">${p.name} ${p.lastName}</span>
     <button class="remove-btn" title="Remove">×</button>
   `;
   list.appendChild(li);
 }
-}
+
+list.addEventListener("click", (e) => {
+  if (!e.target.classList.contains("remove-btn")) return;
+  const li = e.target.closest("li");
+  const id = Number(li.dataset.id);
+  birthdays = birthdays.filter((x) => x.id !== id);
+  li.remove();
+});
