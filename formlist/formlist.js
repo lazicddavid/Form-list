@@ -16,4 +16,11 @@ function addBirthday(p) {
   const li = document.createElement("li");
   li.className = "person";
   lidataset.id = personalbar.id;
+    li.innerHTML = `
+    <img class="avatar" src="${p.img}" alt="${p.name} ${p.lastName}">
+    <span class="name-lastName">${p.name} ${p.lastName}</span>
+    <button class="remove-btn" title="Remove">×</button>
+  `;
+  list.appendChild(li);
+}
 }
