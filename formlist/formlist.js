@@ -12,4 +12,6 @@ const imgEl = document.getElementById("imageUrl");
 
 let birthdays = [];
 
-function addBirthday(p) {}
+function addBirthday(p) {
+  const li
+}
