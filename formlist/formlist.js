@@ -14,5 +14,6 @@ let birthdays = [];
 
 function addBirthday(p) {
   const li = document.createElement("li");
-  li.className;
+  li.className = "person";
+  lidataset.id = personalbar.id;
 }
