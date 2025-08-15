@@ -10,7 +10,7 @@ const list = document.getElementById("addedList");
 const nameEl = document.getElementById("name");
 const lastEl = document.getElementById("last-name");
 const imgEl = document.getElementById("imageUrl");
-const imgEl
+const nameEl
 // Prazan niz
 let birthdays = [];
 
