@@ -95,5 +95,6 @@ input[type="file"] {
 }
 
 .remove-check {
+  margin-left: ;
   cursor: pointer;
 }
