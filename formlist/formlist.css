@@ -93,3 +93,6 @@ input[type="file"] {
   transform: scale(1.2);
   cursor: pointer;
 }
+
+.remove-check {
+}
