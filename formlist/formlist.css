@@ -89,6 +89,7 @@ input[type="file"] {
   gap: 10px;
 }
 .remove-check {
+  color: #ccc;
   margin-left: auto;
   transform: scale(1.2);
   cursor: pointer;

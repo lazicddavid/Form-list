@@ -4,14 +4,12 @@
 //umesto check box-a stavi button x;
 //iskoristi innerHTML da popunis html novog rodjendan
 
-// Selektori
 const form = document.getElementById("birthdayForm");
 const list = document.getElementById("addedList");
 const nameEl = document.getElementById("name");
 const lastEl = document.getElementById("last-name");
 const imgEl = document.getElementById("imageUrl");
 
-// Prazan niz
 let birthdays = [];
 
 function addBirthday(person) {
@@ -37,9 +35,9 @@ list.addEventListener("click", function (e) {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  const name = nameEl.value.trim();
-  const lastName = lastEl.value.trim();
-  const img = imgEl.value.trim();
+  const name = nameEl.value;
+  const lastName = lastEl.value;
+  const img = imgEl.value;
   if (!name || !lastName || !img) return;
 
   const person = {
