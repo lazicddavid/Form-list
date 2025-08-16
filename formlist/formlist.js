@@ -10,42 +10,46 @@ const list = document.getElementById("addedList");
 const nameEl = document.getElementById("name");
 const lastEl = document.getElementById("last-name");
 const imgEl = document.getElementById("imageUrl");
-const nameEl
+
 // Prazan niz
 let birthdays = [];
 
-// Dodaj jedan rođendan u DOM
-function addBirthday(p) {
+function addBirthday(person) {
   const li = document.createElement("li");
   li.className = "person";
-  li.dataset.id = p.id;
+  li.setAttribute("data-id", person.id);
   li.innerHTML = `
-    <img class="avatar" src="${p.img}" alt="${p.name} ${p.lastName}">
-    <span class="name-lastName">${p.name} ${p.lastName}</span>
-    <button class="remove-btn"   type="button"   title="Remove">×</button>
+    <img class="avatar" src="${person.img}">
+    <span>${person.name} ${person.lastName}</span>
+    <button class="remove-btn">X</button>
   `;
   list.appendChild(li);
 }
 
-// Brisanje samo jednog reda (delegacija)
-list.addEventListener("click", (e) => {
-  if (!e.target.classList.contains("remove-btn")) return;
-  const li = e.target.closest("li");
-  const id = Number(li.dataset.id);
-  birthdays = birthdays.filter((x) => x.id !== id);
-  li.remove();
+list.addEventListener("click", function (e) {
+  if (e.target.classList.contains("remove-btn")) {
+    const li = e.target.parentElement;
+    const id = Number(li.getAttribute("data-id"));
+    birthdays = birthdays.filter((person) => person.id !== id);
+    li.remove();
+  }
 });
 
-// Dodavanje u niz + prikaz jednog reda
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
   const name = nameEl.value.trim();
   const lastName = lastEl.value.trim();
   const img = imgEl.value.trim();
   if (!name || !lastName || !img) return;
 
-  const p = { id: Date.now(), name, lastName, img };
-  birthdays.push(p); // 1) dodaj u niz
-  addBirthday(p); // 2) dodaj jedan red na ekran
+  const person = {
+    id: Date.now(),
+    name: name,
+    lastName: lastName,
+    img: img,
+  };
+
+  birthdays.push(person);
+  addBirthday(person);
   form.reset();
 });
